@@ -5,7 +5,7 @@ import axios from 'axios';
 function App(){
     const [quote, setQuote] = useState('')
     const getQuote = () =>{
-        axios.get('https://api.quotable.io/radom').then (res =>{
+        axios.get('https://api.quotable.io/random').then (res =>{
             console.log(res.data.content)
             setQuote(res.data.content)
         }).catch (err =>{
