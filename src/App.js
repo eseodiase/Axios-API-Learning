@@ -5,9 +5,9 @@ import axios from 'axios';
 function App(){
     const [quote, setQuote] = useState('')
     const getQuote = () =>{
-        fetch('https://api.quotable.io/random').then (res =>{
-            console.log(res.data.content)
-            setQuote(res.data.content)
+        axios.get('https://api.thecatapi.com/v1/images/search').then (res =>{
+            console.log(res)
+            setQuote(res)
         }).catch (err =>{
             console.log(err)
         })
