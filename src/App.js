@@ -18,8 +18,8 @@ function App(){
     return(
     <div className="App">
     <button onClick={getQuote}> Get Quote </button>
-    <p>{author}</p>
-    <p>{quote}</p>
+    <label>Quotes</label> <p>{quote}</p>
+    <label>Author</label> <h4>{author}</h4>
     </div>
     )
 }
