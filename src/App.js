@@ -17,9 +17,9 @@ function App(){
     
     return(
     <div className="App">
-    <button onClick={getQuote}> Get Quote </button>
-    <label>Quotes</label> <p>{quote}</p>
-    <label>Author</label> <h4>{author}</h4>
+    <button onClick={getQuote}> Get Quote </button> <br/>
+    <p><label>Quotes:</label> {quote}</p>
+    <h4><label>Author:</label> {author}</h4>
     </div>
     )
 }
